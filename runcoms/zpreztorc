@@ -27,7 +27,10 @@ zstyle ':prezto:*:*' color 'yes'
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
+  'archive' \
+  'coomand-not-found' \
   'environment' \
+  'python' \
   'terminal' \
   'editor' \
   'history' \
@@ -35,6 +38,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #
@@ -143,10 +148,10 @@ zstyle ':prezto:module:prompt' show-return-val 'yes'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:screen:auto-start' local 'yes'
+# zstyle ':prezto:module:screen:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:screen:auto-start' remote 'yes'
+# zstyle ':prezto:module:screen:auto-start' remote 'yes'
 
 #
 # SSH
@@ -162,12 +167,12 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
 # zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
+   'main' \
+   'brackets' \
+   'pattern' \
+   'line' \
+   'cursor' \
+   'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
