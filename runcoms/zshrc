@@ -14,3 +14,8 @@ fi
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
+
+unsetopt correct_all
+
+alias update="sudo apt update && sudo apt list --upgradable"
+alias upgrade="update && sudo apt upgrade && sudo apt autoremove"
